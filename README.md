@@ -9,7 +9,7 @@ protected override void OnShown(EventArgs e) {
 }
 ```
 
-An you're done!
+And you're done!
 
 ![Alt Text](https://media.giphy.com/media/k7NrrrPBLsHdGBsDUR/giphy.gif)
 
