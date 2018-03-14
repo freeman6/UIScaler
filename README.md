@@ -6,7 +6,8 @@ A Windows Forms automatic UI scaler for C#! It is very easy to use, simply load 
 protected override void OnShown(EventArgs e) {
 	base.OnShown(e);
 	UIScaler.AddToScaler(this);
-}```
+}
+```
 
 An you're done!
 
