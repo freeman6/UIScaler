@@ -1,5 +1,6 @@
-﻿using System.Collections.Concurrent;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -26,7 +27,7 @@ namespace System.Windows.Forms {
 		/// </summary>
 		/// <param name="control">The control whose children to scale</param>
 		public static void AddToScaler(Control control) {
-			if (control == null || StyledForm.DesignMode)
+			if (control == null || LicenseManager.UsageMode == LicenseUsageMode.Designtime)
 				return;
 			LockHandler.EnterWriteLock();
 			if (Excluded.Remove(control))
