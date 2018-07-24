@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace System.Windows.Forms {
@@ -188,9 +187,6 @@ namespace System.Windows.Forms {
 		/// </summary>
 		/// <param name="parentOrEqual">The control to check if it is parent or equal to childControl.</param>
 		/// <param name="childControl">The supposed child control.</param>
-#if NET45
-		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-#endif
 		public static bool IsParentOrEqual(Control parentOrEqual, Control childControl) {
 			if (parentOrEqual == null)
 				return false;
